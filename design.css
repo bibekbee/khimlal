@@ -1,0 +1,463 @@
+/*--- this is a css file for index */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+/*-------------- HEADER CSS START ---------------*/
+
+.top-col {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	padding: 5px;
+	background-color: #444;
+	color: white;
+}
+
+.top-col div{
+	display: flex;
+	cursor: pointer;
+}
+
+.top-col div p{
+	padding-left: 10px;
+}
+
+.top-email{
+	padding-left: 30px;
+}
+
+.top-phone{
+	padding-right: 20px;
+}
+
+@media(max-width: 700px){
+	.top-col div{
+		display: block;
+		position: relative;
+		font-size: 11px;
+	}
+}
+
+
+/*------------------- Header --------------------*/
+ 
+header {
+	position: relative;
+	background-color: #fff;
+
+	margin: 20px;
+}
+
+nav img{
+	width: 150px;
+	min-height: 100px;
+	margin-left: 20px;
+}
+
+header h1{
+	flex : 2;
+	padding-left: 40px;
+	color: #000;
+	text-align: left;
+	font-size: 15px;
+	padding-top:20px;
+	
+}
+
+/*----- MEDIA QUERY ----*/
+
+@media(max-width: 50em){
+	nav img{
+		margin-left: 0;
+		width: 120px;
+	}
+		
+	header{
+		padding-top: 10px;
+		margin: 0;
+		min-height: 10vh;
+	}
+
+	header h1{
+		font-size: 15px;
+		text-align: left;
+		padding:0 0 0 0;
+		
+	}
+}
+
+/*--------------- NAV -------------*/
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 0;
+	cursor: pointer;
+	font-weight: 500;
+	padding-right: 20px;
+	
+	
+}
+
+.nav-links{
+
+	padding-top: 2.5em;
+}
+
+.nav-links ul li{
+	text-align: right;
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+	
+}
+
+.nav-links ul li a{
+	color: #000;
+	text-decoration: none;
+	font-size: 19px;
+}
+
+
+.nav-links ul li::after{
+        content: '';
+		width: 0%;
+		height:2px;
+		background: #f44336;
+		display: block;
+		margin: auto; 
+		transition: 0.5s;
+	
+	}
+	
+.nav-links ul li:hover::after{
+		width: 100%;
+	}
+	
+.nav-links ul li a:hover {
+	color: rgb(20,30,200);
+}
+
+.bars-btn {
+	color: #333;
+	font-size: 20px;
+	
+}
+
+.times-btn{
+		display: none;
+	}
+	
+.bars-btn{
+		display: none;
+}
+
+@media(max-width: 50em){
+	.top-col{
+		display:none;
+	}
+	
+	.nav-links{
+		position: absolute;
+		background-color: #777;
+		min-height: 40vh; 
+		width: 200px;
+		right:-200px;
+		top: 0;
+		color: #fff;
+		z-index: 2;
+		transition: 1s;
+		padding-bottom:20px;
+		
+	}
+	.nav-links ul li{
+		display: flex;
+		justify-content: flex-start;
+		padding: 15px;
+		
+	}
+	
+	.nav-links ul li a{
+		text-align:left;
+		color: #fff;
+	}
+	
+	
+	.times-btn{
+		display: block;
+		padding: 10px;
+	}
+	
+	.bars-btn{
+		display: block;
+		margin:50px 20px 0 0;
+	}
+}
+
+/*--------- HEADER ENDS HERE --------*/ 
+
+
+
+/*--------- MAIN Starts HERE ----*/
+
+.main-test{
+	display: flex;
+	align-items: center;
+	padding: 40px;
+
+}
+
+.links-title{
+	text-align: left;
+	padding:0 0 10px 40px;
+	
+}
+
+.left-flex{
+	flex: 65%;
+	padding-left: 20px;
+}
+
+.desc {
+	padding: 20px;
+	text-align: center;
+	border: 2px solid #bbb;
+	margin: 0 40px 5px 40px;
+}
+
+.learn-m{
+	text-align: right;
+	padding-right: 40px;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.learn-m a{
+	font-style: none;
+	text-decoration: none;
+	color: #222;
+}
+
+.learn-m a:hover{
+	color:rgb(200,30,20);
+}
+
+.right-flex{
+	flex: 35%;
+}
+
+.slider-col {
+	display:flex;
+	justify-content: space-around;
+	min-height: 60vh;
+	background-image: linear-gradient(rgba(200,200,200,0.7),rgba(10,7,50,0.7)), url(images/lumbini-L.jpg);
+	background-position: top;
+	background-size: cover;
+	color: #fff;
+	text-align: left;
+	position: relative;
+	padding-top: 150px;
+	font-size: 30px;
+	
+}
+
+.slider-col p{
+	padding-top: 15px;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: left;
+	line-height: 30px;
+}
+
+.slider-col img{
+	width: 300px;
+    background-color: rgba(230,230,230,0.3);
+	margin-top: -100px;
+	border-radius: 300px;
+	margin-bottom: 30px;
+	border-width: 0;
+
+}
+
+
+.finder-col {
+	min-width: 95%;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	color: #fff;
+	margin: 1rem;
+	
+	
+}
+
+.finder-col img{
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin:0 0 10px 0;
+	border: 3px solid white;
+	
+}
+
+.row {
+	text-align: left;
+	padding: 2em;
+	background-color: rgba(10,7,50,0.7);
+
+
+}
+
+.head1 {
+	margin:20px
+	text-align: left;
+    padding-bottom: 10px;
+	border-bottom: 2px solid white;
+	border-color: rgb(203,100,109);
+}
+
+
+.row p{
+	padding-top: 1em;
+	text-align: left;
+}
+
+.hero-btn {
+		display: inline-block;
+		text-decoration: none;
+		color: #222;
+		border: 1px solid #777;
+		padding: 12px 34px;
+		background: transparent;
+		position: relative;
+		cursor : pointer;
+		margin-top: 20px;
+	}
+
+	
+	.hero-btn:hover{
+		border: 1px soild #ff44336;
+		background : #f44336;
+		transition: 1s;
+		color: #fff
+	}
+	
+	.article {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 15px;
+	}
+	
+	.article div{
+		padding:30px;
+		background-color: #bbb;	
+		min-height: 50px;
+	}
+	
+	.article div a{
+		color: #fff;
+	}
+	
+
+@media(max-width: 50em) {
+	.finder-col{
+		padding: 10px;
+		margin: 10px;
+		grid-template-columns:1fr;
+		justify-items:center;
+		padding: 20px;
+		
+
+	}
+	.finder-col img{
+		diplay: none;
+		width: 260px;	
+	}
+	
+
+	.slider-col p{
+		font-size: 12px;
+		padding: 10px 20px 0 20px;
+	}
+	.slider-col h1{
+		font-size:19px;
+	}
+	
+}
+
+/*-------- FOOTER ------*/
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 2em;
+	font-size: 15px;
+	background-color: #bbb;
+}
+
+.footnav-links{
+	padding-top: 10px;
+}
+
+.footnav-links ul li{
+	text-align: right;
+	list-style: none;
+	display: inline;
+	padding: 8px 12px;
+	position: relative;
+	
+}
+
+.footnav-links ul li a{
+	color: #000;
+	text-decoration: none;
+	font-size: 17px;
+
+}
+
+.footnav-links ul li a:hover {
+	color: rgb(200,30,20);
+}
+
+					
+.icon-col {
+	padding:0 40px 0 0;
+}
+
+.icon-col .fa{
+	text-align: left;
+	font-size: 25px;
+    padding: 10px 0 10px 20px;
+
+	cursor:pointer;
+}
+
+@media (max-width: 50em) {
+	footer{ 
+		grid-template-columns: 1fr;
+	}
+
+	
+	.icon-col .fa{
+		padding:0;
+		iteam-align:top;
+	}
+	
+	.copyright-col {
+		font-size: 11px;
+	}
+
+}
+
+/*-----------COPYRIGHT -----------*/
+.copyright-col{
+	text-align: center;
+	background-color: #222;
+	color: #bbb;
+	padding: 10px;
+}
