@@ -246,6 +246,7 @@ nav{
 
 .learn-m a:hover{
 	color:rgb(200,30,20);
+	
 }
 
 .right-flex{
@@ -308,9 +309,7 @@ nav{
 .row {
 	text-align: left;
 	padding: 2em;
-	background-color: rgba(10,7,50,0.7);
-
-
+	
 }
 
 .head1 {
@@ -325,6 +324,17 @@ nav{
 .row p{
 	padding-top: 1em;
 	text-align: left;
+}
+
+.par {
+	background-color: #ddd;
+	margin: 20px;
+	padding: 30px;
+	color: #111;
+}
+
+.par p{
+	padding-top: 20px;
 }
 
 .hero-btn {
