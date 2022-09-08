@@ -471,3 +471,8 @@ footer{
 	color: #bbb;
 	padding: 10px;
 }
+
+/*--------------------Iframe------*/
+iframe{
+	padding: 20px;
+}
