@@ -76,6 +76,10 @@ header h1{
 /*----- MEDIA QUERY ----*/
 
 @media(max-width: 50em){
+	header{
+		overflow:hidden;	
+	}
+	
 	nav img{
 		margin-left: 0;
 		width: 120px;
