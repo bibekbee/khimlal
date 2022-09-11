@@ -42,13 +42,13 @@
 			
 		<!-- HEADER has the LOGO site title and the Nav Menu -->
 		
-		<header>
+		<header id="notLink">
 				<nav>
 				<!-- <img src="images/logo.png"> -->
 					<h1> Official Website of <br> <span style="font-size: 20px;"> Mr. Khimlal Bhattarai </span></h1>
 				<div class="nav-links" id="navLink">	
 					<label for="check" class="times-btn" >
-						<i class="fa fa-times" onclick = "hideMenu()"></i>
+						<i class="fa fa-times" onclick = "hideMenu();hideMe()"></i>
 					 </label>
 					 
 					 <ul>
@@ -60,7 +60,7 @@
 					</ul>
 					</div>
 					<label for="check" class="bars-btn">
-						<i class="fa fa-bars" onclick = "showMenu()"></i>
+						<i class="fa fa-bars" onclick = "showMenu(); showMe()"></i>
 					 </label>
 				</nav>
 			
@@ -131,7 +131,14 @@
 				function showMenu() {
 					navLink.style.right = "0";}
 				function hideMenu(){
-					navLink.style.right = "-200px";}	
+					navLink.style.right = "-200px";}
+				
+				var notLink = document.getElementById("notLink");
+				<!-- javascript for toggle menu -->
+				function showMe() {
+					notLink.style.overflow= "visible"}
+				function hideMe(){
+					notLink.style.overflow= "hidden"}	
 				
 			</script>
 			
