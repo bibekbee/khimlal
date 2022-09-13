@@ -541,12 +541,12 @@ footer{
 	.icon-col .fa{
 		padding:0;
 		iteam-align:top;
-		font-size: 30px;
+		font-size: 23px;
 	}
-	
+	/*-----------
 	.icon-col a{
 		color: #fff;
-	}
+	} ------*/
 	
 	.copyright-col {
 		font-size: 11px;
