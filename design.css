@@ -537,6 +537,12 @@ footer{
 	.copyright-col {
 		font-size: 11px;
 	}
+	
+	iframe{
+	padding: 30px;
+	overflow: hidden;
+	width: 50%;	
+}
 
 }
 
