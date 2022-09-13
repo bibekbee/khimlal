@@ -95,7 +95,7 @@ header h1{
 	header h1{
 		padding: 15px;
 		font-size: 10px;
-		margin-left: 15px;
+		margin-left: 20px;
 	}
 	
 	#khim{
@@ -202,6 +202,14 @@ nav{
 	.nav-links ul li a{
 		text-align:left;
 		color: #fff;
+	}
+	
+	.nav-links ul li::after{
+		display: block;
+	}
+	
+	.nav-links ul li:hover::after{
+		width: 0;
 	}
 	
 	.times-btn{
@@ -533,6 +541,11 @@ footer{
 	.icon-col .fa{
 		padding:0;
 		iteam-align:top;
+		font-size: 10px;
+	}
+	
+	.icon-col .fa a{
+		color: #fff;
 	}
 	
 	.copyright-col {
